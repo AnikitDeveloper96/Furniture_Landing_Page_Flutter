@@ -28,3 +28,35 @@ class ClientReviewUserModel {
     required this.ratingImage,
   });
 }
+
+class Product {
+  final String imagePath;
+  final String category;
+  final String name;
+  final double price;
+  final int rating;
+
+  Product({
+    required this.imagePath,
+    required this.category,
+    required this.name,
+    required this.price,
+    required this.rating,
+  });
+}
+
+class WhyChooseUsProductPage {
+  final String whyChooseUsProductPagetitle;
+  final String whyChooseUsProductPageDescription;
+  WhyChooseUsProductPage(
+      {required this.whyChooseUsProductPagetitle,
+      required this.whyChooseUsProductPageDescription,});
+}
+
+class FurnitureLandingPageFooterModel {
+  String productTileFooter;
+  List<String> footerItems;
+
+  FurnitureLandingPageFooterModel(
+      {required this.footerItems, required this.productTileFooter});
+}
